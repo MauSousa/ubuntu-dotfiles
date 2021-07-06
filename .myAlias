@@ -1,0 +1,27 @@
+# Archivo para guardar los alias
+
+alias actualizar="sudo apt update && sudo apt upgrade"
+alias apagar="shutdown -P now"
+alias reiniciar="shutdown -r now"
+alias l="lsd --group-dirs=first"
+alias ll="lsd -h --group-dirs=first"
+alias la="lsd -a --group-dirs=first"
+alias lla="lsd -lah --group-dirs=first"
+alias ls="lsd --group-dirs=first"
+alias cat="bat"
+alias catn="/usr/bin/cat"
+alias pull="git pull"
+alias push="git push"
+alias commit="git commit"
+alias add="git add"
+alias init="git init"
+alias start="npm start"
+alias build="npm run build"
+alias build:dev="npm run build:dev"
+alias py="python3"
+alias cl="clear"
+alias pst="ps -e | grep "tmux""
+alias tas="tmux attach-session"
+alias ..="cd .."
+
+

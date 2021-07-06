@@ -1,0 +1,91 @@
+# Fuction to compile and execute cpp programs
+function compile-cpp(){
+    local obj="${1}.cpp"
+    local name="${2}"
+    g++ "$obj" -o "$name"
+    ./"$name"
+}
+
+# Function to compile and execute c programs
+function compilar-c(){
+    local file="${1}.c"
+    local name="${2}"
+    g++ "$file" -o "$name"
+    ./"$name"
+}
+
+# Function to compile and execute java programs
+function compile-java(){
+    local file="${1}.java"
+    javac "$file"
+	java "$file"
+}
+
+# Function to create and enter a directory
+function crear-entrar(){
+    local directorio="${1}"
+    mkdir "$directorio"
+    cd "$directorio"
+}
+
+# Function to add and commit in git
+function addm(){
+	git add .
+	local comentatrio="${1}"
+	git commit -m "$comentatrio"
+}
+
+# Function to add and commit README
+function addreadme(){
+	local comentary="First commit"
+	local readme="README.md"
+	git add "$readme"
+	git commit -m "$comentary"
+}
+
+# Function to add a file to git
+function addf(){
+	local archive="${1}"
+	local commentary="${2}"
+	git add "$archive"
+	git commit -m "${commentary}"
+}
+
+# Function for MySQL
+function entrarSql() {
+	local user="${1}"
+	mysql -u "$user" -p
+}
+
+# Function to make the first push to GitHub
+function gh() {
+	local url="${1}"
+	git remote add origin "$url"
+	git branch -M main
+	git push -u origin main
+}
+
+# Function for timing tree command over /
+function trz() {
+	local dirName="${1}"
+	time tree "$dirName"
+}
+
+# Function to start a new tmux session
+function tsm() {
+	tmux new -s main
+}
+
+# Function to delete files
+function rmk() {
+	scrub -p dod $1
+	shred -zun 10 -v $1
+}
+
+# Function to copy and push dotfiles to repository
+function cdf() {
+cp ~/.zshrc ~/.vimrc ~/.config/alacritty/alacritty.yml ~/.tmux.conf ~/.p10k.zsh /home/augusto/Documents/config/config.md .config/rasi/config.rasi /home/augusto/Documents/dotfiles
+}
+
+
+
