@@ -186,11 +186,7 @@
 
   &ensp;&ensp;`` git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ``
 
-  &ensp;&ensp;__Nota: En el momento de escribir esta guía, hay problemas con este plugin, el problema es que no funciona correctamente el plugin, es decir, no funciona hacer flecha para arriba para buscar un comando, la manera que encontré para resolverlos cerrar la sesión y entrar de nuevo, fecha de escritura martes 6 julio 2021.__
-  
-  &ensp;&ensp;__Nota 2: Otra forma de solucionar el problema es cerrar el emulador de terminal y volver a abrir.__
-
-  &ensp;&ensp;__Nota 3: Esto pasa cada vez que se ejecuta el comando source .zshrc.__
+  &ensp;&ensp;__Nota: no hagan source de este plugin en el archivo .zshrc ya que tendrá problemas cuando ejecuten el comando "source .zshrc"__
 
 ### 17. Instalar Tmux
 &ensp;&ensp;Instalar Tmux para tener múltiples ventanas de terminal en una sola terminal.
