@@ -84,7 +84,7 @@ function rmk() {
 
 # Function to copy and push dotfiles to repository
 function cdf() {
-cp ~/.zshrc ~/.vimrc ~/.config/alacritty/alacritty.yml ~/.tmux.conf ~/.p10k.zsh /home/augusto/Documents/config/config.md ~/.mongorc.js /home/augusto/Documents/dotfiles
+cp ~/.zshrc ~/.vimrc ~/.config/alacritty/alacritty.yml ~/.tmux.conf ~/.p10k.zsh /home/augusto/Documents/config/README.md ~/.mongorc.js /home/augusto/Documents/dotfiles
 }
 
 
