@@ -11,11 +11,11 @@ source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # Alias
-export Alias="/home/augusto/Documents/DotFiles"
+export Alias="/home/augusto/Documents/dotfiles"
 source $Alias/.myAlias
 
 # Functions
-export Functions="/home/augusto/Documents/DotFiles"
+export Functions="/home/augusto/Documents/dotfiles"
 source $Functions/.myFunctions
 
 # Theme
@@ -27,4 +27,4 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source /home/augusto/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
