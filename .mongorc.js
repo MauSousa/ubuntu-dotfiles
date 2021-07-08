@@ -2,5 +2,5 @@ host = db.serverStatus().host;
 cmdCount = 1;
 
 prompt = function() {
-	return (cmdCount++) + "> " + db+"@"+host+"# ";         
+	return (cmdCount++) + ">" + db+"@"+host+"# ";         
 }
