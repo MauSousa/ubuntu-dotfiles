@@ -15,11 +15,11 @@ function compilar-c(){
 }
 
 # Function to compile and execute java programs
-function compile-java(){
-    local file="${1}.java"
-    javac "$file"
-	java "$file"
-}
+#function compile-java(){
+#    local file="${1}.java"
+#    javac "$file"
+#	java "$file"
+#}
 
 # Function to create and enter a directory
 function crear-entrar(){
@@ -84,7 +84,7 @@ function rmk() {
 
 # Function to copy and push dotfiles to repository
 function cdf() {
-cp ~/.zshrc ~/.vimrc ~/.config/alacritty/alacritty.yml ~/.tmux.conf ~/.p10k.zsh /home/augusto/Documents/config/config.md .config/rasi/config.rasi /home/augusto/Documents/dotfiles
+cp ~/.zshrc ~/.vimrc ~/.config/alacritty/alacritty.yml ~/.tmux.conf ~/.p10k.zsh /home/augusto/Documents/config/config.md ~/.mongorc.js /home/augusto/Documents/dotfiles
 }
 
 
