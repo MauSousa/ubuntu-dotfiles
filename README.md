@@ -41,14 +41,14 @@
 
 &ensp;&ensp;`` hostname -I ``
 
-&ensp;&ensp;`` ifconfig `` 
+&ensp;&ensp;`` ifconfig ``
 
 &ensp;&ensp;``ip addr show ``
 
 ### 3. Cambiar la dirección ip a una dirección estática si lo deseamos
 &ensp;&ensp;Por dedefecto la ip se asigna por dhcp, si se quiere cambiar la ip hay que hacerlo desde la interfaz gráfica que nos proporciona el SO.
 
-### 4. Instalar net-tools 
+### 4. Instalar net-tools
 
 &ensp;&ensp;`` sudo apt install net-tools ``
 
@@ -67,7 +67,7 @@
 
 &ensp;&ensp;`` git congif --global user.email "Correo del usuario" ``
 
-### 7.1 Crear alias para git (en caso de usarlos).
+### 7.1 Crear alias para git (en caso de usarlos)
 &ensp;&ensp;`` git config alias.lg "log --oneline --decorate --all --graph" ``
 
 &ensp;&ensp;`` git config alias.s "status -s -b" ``
