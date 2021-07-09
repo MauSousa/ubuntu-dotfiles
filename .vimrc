@@ -21,8 +21,6 @@ call plug#begin()
  Plug 'sonph/onehalf', { 'rtp': 'vim' }
 
 
-
-
 call plug#end()
 
 " CoC tab key map
