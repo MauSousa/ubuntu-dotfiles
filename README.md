@@ -178,16 +178,6 @@
   
   &ensp;&ensp;`` source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh ``
 
-**3.** **zsh-autocomplete**
-  
-  &ensp;&ensp;`` git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ``
-
-  &ensp;&ensp;Usar vim para agregar la siguiente línea al archivo __.zshrc__.
-
-  &ensp;&ensp;`` git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ``
-
-  &ensp;&ensp;__Nota: no hagan source de este plugin en el archivo .zshrc ya que tendrá problemas cuando ejecuten el comando "source .zshrc"__
-
 ### 17. Instalar Tmux
 &ensp;&ensp;Instalar Tmux para tener múltiples ventanas de terminal en una sola terminal.
 
@@ -386,3 +376,55 @@ Hay que instalar apache para poder usar php.
 - **Postman** &ensp;&ensp;`` Ctrl + Alt + Super + P ``
 - **Gnome-Tweaks** &ensp;&ensp;`` Shift + Ctrl + Q ``
 - **Firefox** &ensp;&ensp;`` Shift + Ctrl + B ``
+
+### 28. Instalar Docker
+&ensp;&ensp;La documentación para instalar Docker se encuentra [aquí](https://docs.docker.com/engine/install/ubuntu/).
+
+&ensp;&ensp;Actualizamos el sistema.
+
+&ensp;&ensp;`` sudo apt update ``
+
+&ensp;&ensp;Debemos quitar cualquier instalación previa de Docker ejecutando el siguiente comando.
+
+&ensp;&ensp;`` sudo apt-get remove docker docker-engine docker.io containerd runc ``
+
+&ensp;&ensp;Procedemos a instalar las herramientas necesarias para instalar el repositorio.
+
+&ensp;&ensp;`` sudo apt-get install apt-transport-https ca-certificates curl gnupg lsb-release ``
+
+&ensp;&ensp;Agregamos la llave del repositorio.
+
+&ensp;&ensp;`` curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg ``
+
+&ensp;&ensp;Seleccionamos la plataforma en la que se instalará Docker.
+
+&ensp;&ensp;`` echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null ``
+
+&ensp;&ensp;Instalamos Docker.
+
+&ensp;&ensp;`` sudo apt-get update``
+
+&ensp;&ensp;`` sudo apt-get install docker-ce docker-ce-cli containerd.io ``
+
+&ensp;&ensp;Verificamos que se haya instalado de forma correcta.
+
+&ensp;&ensp;`` which docker ``
+
+
+
+
+### 29. Manejar Docker sin permisos de root
+
+&ensp;&ensp;La documentación [aquí](https://docs.docker.com/engine/install/linux-postinstall/).
+
+&ensp;&ensp;Creamos el grupo docker
+
+&ensp;&ensp;`` sudo groupadd docker ``
+
+&ensp;&ensp;Le damos permisos al usuario para estar en el grupo
+
+&ensp;&ensp;`` sudo usermod -aG docker $USER ``
+
+&ensp;&ensp;Aplicamos los cambios en el grupo
+
+&ensp;&ensp;`` newgrp docker ``
