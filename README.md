@@ -31,6 +31,7 @@
 - [Postman](#25-instalar-postman)
 - [Herramientas que faltan para Python](#26-instalar-herramientas-que-faltan-para-python)
 - [Atajos de teclado](#27-atajos-de-teclado-personalizados)
+- [Docker](#28-instalar-docker)
 
 ---
 
@@ -409,9 +410,6 @@ Hay que instalar apache para poder usar php.
 &ensp;&ensp;Verificamos que se haya instalado de forma correcta.
 
 &ensp;&ensp;`` which docker ``
-
-
-
 
 ### 29. Manejar Docker sin permisos de root
 
