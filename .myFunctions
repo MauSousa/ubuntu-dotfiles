@@ -84,8 +84,17 @@ function rmk() {
 
 # Function to copy and push dotfiles to repository
 function cdf() {
-cp ~/.zshrc ~/.vimrc ~/.config/alacritty/alacritty.yml ~/.tmux.conf ~/.p10k.zsh ~/.mongorc.js ~/.config/lsd/config.yaml /home/augusto/Documents/dotfiles
+	cp ~/.zshrc ~/.vimrc ~/.config/alacritty/alacritty.yml ~/.tmux.conf ~/.p10k.zsh ~/.mongorc.js ~/.config/lsd/config.yaml /home/augusto/Documents/dotfiles
 }
 
+# Function to run go programs
+function gr() {
+	go run $1
+}
+
+# Function to build executable go programs
+function gb() {
+	go build $1
+}
 
 
