@@ -36,6 +36,10 @@ export HISTTIMEFORMAT="[%F %T] "
 setopt EXTENDED_HISTORY
 setopt HIST_FIND_NO_DUPS
 
+# Monitor
+xrandr --output HDMI-1 --primary --mode 1920x1200 --rotate normal --output eDP-1 --mode 1920x1080 --rotate normal --right-of HDMI-1
+
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
