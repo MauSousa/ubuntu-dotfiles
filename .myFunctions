@@ -97,4 +97,8 @@ function gb() {
 	go build $1
 }
 
+# Function to copy bspwm config, polybar, sxhkdrc
+function cbc {
+	cp -r ~/.config/bspwm ~/.config/sxhkd	~/.config/polybar ~/.config/bin /home/augusto/Documents/dotfiles
+}
 
