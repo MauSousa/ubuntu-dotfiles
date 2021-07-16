@@ -99,6 +99,6 @@ function gb() {
 
 # Function to copy bspwm config, polybar, sxhkdrc
 function cbc {
-	cp -r ~/.config/bspwm ~/.config/sxhkd	~/.config/polybar ~/.config/bin /home/augusto/Documents/dotfiles
+	cp -r ~/.config/bspwm ~/.config/sxhkd	~/.config/polybar ~/.config/bin ~/Pictures /home/augusto/Documents/dotfiles
 }
 
