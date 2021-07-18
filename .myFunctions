@@ -15,11 +15,10 @@ function compilar-c(){
 }
 
 # Function to compile and execute java programs
-#function compile-java(){
-#    local file="${1}.java"
-#    javac "$file"
-#	java "$file"
-#}
+function compilar-java(){
+    local file="${1}"
+		java "$file"
+}
 
 # Function to create and enter a directory
 function crear-entrar(){
