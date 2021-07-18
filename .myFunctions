@@ -14,10 +14,15 @@ function compilar-c(){
     ./"$name"
 }
 
-# Function to compile and execute java programs
+# Function to compile java programs
 function compilar-java(){
     local file="${1}"
-		java "$file"
+		javac "$file"
+}
+
+# Function to execute java program
+function exe-java() {
+		java $1
 }
 
 # Function to create and enter a directory
