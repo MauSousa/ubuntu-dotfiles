@@ -31,10 +31,11 @@ export PATH=$PATH:/usr/local/go/bin
 export HISTFILE=~/.zsh_history
 export HISTFILESIZE=20000
 export HISTSIZE=20000
-setopt INC_APPEND_HISTORY
 export HISTTIMEFORMAT="[%F %T] "
+export SAVEHIST=20000
 setopt EXTENDED_HISTORY
 setopt HIST_FIND_NO_DUPS
+setopt INC_APPEND_HISTORY
 
 # Monitor
 xrandr --output HDMI-1 --primary --mode 1920x1200 --rotate normal --output eDP-1 --mode 1920x1080 --rotate normal --right-of HDMI-1
