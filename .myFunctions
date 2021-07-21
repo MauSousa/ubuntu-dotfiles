@@ -106,3 +106,10 @@ function cbc {
 	cp -r ~/.config/bspwm ~/.config/sxhkd	~/.config/polybar ~/.config/bin ~/Pictures /home/augusto/Documents/dotfiles
 }
 
+# Function to copy the content of a go file and write it in another file
+function cgs() {
+	local route="../sample.go"
+	catn "$route" > $1
+}
+
+
