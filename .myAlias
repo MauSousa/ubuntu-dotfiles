@@ -25,4 +25,5 @@ alias pst="ps -e | grep "tmux""
 alias tas="tmux attach-session"
 alias ..="cd .."
 alias flamegui="flameshot gui"
-
+alias gt="gr"
+alias gti="go mod tidy"
