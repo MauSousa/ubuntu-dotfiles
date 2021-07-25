@@ -112,4 +112,8 @@ function cgs() {
 	catn "$route" > $1
 }
 
+# Function to init go module
+function gmod {
+	go mod init $1
+}
 

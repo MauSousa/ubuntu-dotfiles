@@ -20,7 +20,6 @@ call plug#begin()
  Plug 'StanAngeloff/php.vim'
  Plug 'sonph/onehalf', { 'rtp': 'vim' }
 
-
 call plug#end()
 
 " CoC tab key map
@@ -46,6 +45,7 @@ let g:lightline = {
 "\ 'colorscheme': 'nord',
 "\ 'colorscheme': 'Tomorrow_Night',
 
+" Go 
 
 " Typo fixes
 command! WQ wq
