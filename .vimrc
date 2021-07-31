@@ -1,3 +1,6 @@
+set nocompatible
+filetype off
+
 " Vim Plugins
 call plug#begin()
 
@@ -55,14 +58,20 @@ command! W w
 command! Q q
 
 " Basic
-set number
-set relativenumber
+set number relativenumber
+set noswapfile
 set autoindent
 syntax on
 set sw=2
 set tabstop=2
 set laststatus=2
 set wrap linebreak
+set showcmd
+set wildmenu
+"set startofline
+set showmatch
+set noshowmode
+filetype plugin on
 " colorscheme monokai-bold
 " colorscheme monokai-bold
 set term=screen-256color
@@ -70,11 +79,3 @@ let ayucolor="light"
 colorscheme onehalfdark
 " set termguicolors
 
-" Test
-
-set showcmd
-set wildmenu
-set startofline
-set showmatch
-set noshowmode
-filetype plugin on
