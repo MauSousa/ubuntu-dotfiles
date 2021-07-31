@@ -108,8 +108,9 @@ function cbc {
 
 # Function to copy the content of a go file and write it in another file
 function cgs() {
-	local route="../sample.go"
-	catn "$route" > $1
+	local sample="../sample/sample.go"
+	catn "$sample" > $1
+	vim $1
 }
 
 # Function to init go module
