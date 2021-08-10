@@ -20,9 +20,16 @@ source $Functions/.myFunctions
 # Theme
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
+# Firefox dev edition
+export PATH=/opt/firefox/firefox:$PATH
+
 # NVM
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+# Deno
+export DENO_INSTALL="/home/augusto/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
 
 # Go
 export PATH=$PATH:/usr/local/go/bin
