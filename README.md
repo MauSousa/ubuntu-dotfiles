@@ -64,9 +64,9 @@
 
 &ensp;&ensp;`` sudo apt install git ``
 
-&ensp;&ensp;`` git congif --global user.name "Usuario" ``
+&ensp;&ensp;`` git config --global user.name "Usuario" ``
 
-&ensp;&ensp;`` git congif --global user.email "Correo del usuario" ``
+&ensp;&ensp;`` git config --global user.email "Correo del usuario" ``
 
 ### 7.1 Crear alias para git (en caso de usarlos)
 &ensp;&ensp;`` git config alias.lg "log --oneline --decorate --all --graph" ``
