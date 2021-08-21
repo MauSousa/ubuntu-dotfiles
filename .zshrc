@@ -5,27 +5,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Plugins
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# Alias
-export Alias="/home/augusto/Documents/dotfiles"
-source $Alias/.myAlias
-
-# Functions
-export Functions="/home/augusto/Documents/dotfiles"
-source $Functions/.myFunctions
-
-# Theme
-source ~/powerlevel10k/powerlevel10k.zsh-theme
-
-# NVM
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-
-# Go
-export PATH=$PATH:/usr/local/go/bin
+# Created by newuser for 5.8
 
 # History
 export HISTFILE=~/.zsh_history
@@ -37,10 +17,37 @@ setopt EXTENDED_HISTORY
 setopt HIST_FIND_NO_DUPS
 setopt INC_APPEND_HISTORY
 
+# Theme
+source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+# Plugins
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Nvm
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}"  ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh"  ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+# Firefox developer edition
+export PATH=/opt/firefox/firefox:$PATH
+
+# Go
+export PATH=$PATH:/usr/local/go/bin
+
+# Deno
+export DENO_INSTALL="/home/augusto/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
+# Alias
+export Alias="/home/augusto/Documents/dotfiles"
+source $Alias/.myAlias
+
+# Functions
+export Functions="/home/augusto/Documents/dotfiles"
+source $Functions/.myFunctions
+
 # Monitor
 xrandr --output HDMI-1 --primary --mode 1920x1200 --rotate normal --output eDP-1 --mode 1920x1080 --rotate normal --right-of HDMI-1
 
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-

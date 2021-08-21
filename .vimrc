@@ -1,6 +1,7 @@
 set nocompatible
 filetype off
 
+
 " Vim Plugins
 call plug#begin()
 
@@ -48,14 +49,18 @@ let g:lightline = {
 "\ 'colorscheme': 'nord',
 "\ 'colorscheme': 'Tomorrow_Night',
 
-" Go 
-
 " Typo fixes
 command! WQ wq
 command! Wq wq
 command! Wqa wqa
 command! W w
 command! Q q
+
+" Remap
+let mapleader=","
+inoremap ,, <ESC>
+inoremap ññ <ESC>:wq<enter>
+inoremap ñl <ESC>:w<enter>
 
 " Basic
 set number relativenumber

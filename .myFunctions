@@ -77,7 +77,7 @@ function trz() {
 
 # Function to start a new tmux session
 function tsm() {
-	tmux new -s main
+	tmux new -s $1
 }
 
 # Function to delete files
