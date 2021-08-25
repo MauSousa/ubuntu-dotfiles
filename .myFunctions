@@ -114,7 +114,13 @@ function cgs() {
 }
 
 # Function to init go module
-function gmod {
+function gmod() {
 	go mod init $1
 }
+
+# Function to create python virtual env 
+function pyenv() {
+	python3 -m venv $1
+}
+
 
