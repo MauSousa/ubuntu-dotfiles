@@ -131,16 +131,12 @@ alt + super + {Left,Down,Up,Right}
 		/home/augusto/.config/bspwm/scripts/bspwm_resize {west,south,north,east}
 
 # Custom shortcuts
-
-# Discord
 ctrl + shift + d
 		discord
 
-# Firefox dev edition
 ctrl + shift + b
 		/opt/firefox/firefox
 
-# Firex
 ctrl + shift + f
 		firefox
 
