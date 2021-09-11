@@ -124,4 +124,7 @@ function pyenv() {
 	source $1/bin/activate
 }
 
-
+# Function to kill Discord process
+function kd() {
+	killall Discord 2>/dev/null
+}
