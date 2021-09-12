@@ -1,7 +1,6 @@
 set nocompatible
 filetype off
 
-
 " Vim Plugins
 call plug#begin()
 
@@ -60,7 +59,7 @@ command! Q q
 let mapleader=","
 inoremap ,, <ESC>
 inoremap ññ <ESC>:wq<enter>
-inoremap ñl <ESC>:w<enter>
+inoremap ñl <ESC>:w<enter>i
 
 " Basic
 set number relativenumber
