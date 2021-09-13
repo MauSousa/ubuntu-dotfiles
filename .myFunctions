@@ -128,3 +128,13 @@ function pyenv() {
 function kd() {
 	killall Discord 2>/dev/null
 }
+
+# Function to run TS files with Deno
+function dr() {
+	deno run $1
+}
+
+# Function to bundle TS file
+function dnb() {
+	deno bundle $1 $2
+}
