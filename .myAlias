@@ -1,8 +1,15 @@
 # Archivo para guardar los alias
 
+# Sistema
 alias actualizar="sudo apt update && sudo apt upgrade"
 alias apagar="shutdown -P now"
 alias reiniciar="shutdown -r now"
+alias cl="clear"
+alias cñ="cl"
+alias ck="cl"
+alias ..="cd .."
+
+# Directorios
 alias l="lsd --group-dirs=first"
 alias ll="lsd -h --group-dirs=first"
 #alias la="lsd -a --group-dirs=first"
@@ -11,20 +18,30 @@ alias lla="lsd -lah --group-dirs=first"
 alias ls="lsd -lah --group-dirs=first"
 alias cat="/usr/bin/bat"
 alias catn="/usr/bin/cat"
+
+#  Git
 alias pull="git pull"
 alias push="git push"
 alias commit="git commit"
 alias add="git add"
 alias init="git init"
+alias gbr="git branch"
+
+# Npm
 alias start="npm start"
 alias build="npm run build"
 alias build:dev="npm run build:dev"
-alias py="python3"
-alias cl="clear"
+
+# Tmux
 alias pst="ps -e | grep "tmux""
 alias tas="tmux attach-session"
-alias ..="cd .."
+
+# Screebshit with flameshot
 alias flamegui="flameshot gui"
+
+# Golang
 alias gt="gr"
 alias gti="go mod tidy"
-alias cñ="cl"
+
+# Python
+alias py="python3"
