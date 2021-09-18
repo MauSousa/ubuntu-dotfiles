@@ -33,14 +33,14 @@ function crear-entrar(){
 }
 
 # Function to add and commit in git
-function addm(){
+function gaddm(){
 	git add .
 	local comentatrio="${1}"
 	git commit -m "$comentatrio"
 }
 
 # Function to add and commit README
-function addreadme(){
+function gaddreadme(){
 	local comentary="First commit"
 	local readme="README.md"
 	git add "$readme"
@@ -48,11 +48,26 @@ function addreadme(){
 }
 
 # Function to add a file to git
-function addf(){
+function gaddf(){
 	local archive="${1}"
 	local commentary="${2}"
 	git add "$archive"
 	git commit -m "${commentary}"
+}
+
+# Function to create a branch and move
+function gchk() {
+	git checkout -b $1
+} 
+
+# Function to delete branch
+function gdel() {
+	git branch -d $1
+}
+
+# Function to merge branches
+function gmrg() {
+	git merge $1
 }
 
 # Function for MySQL
