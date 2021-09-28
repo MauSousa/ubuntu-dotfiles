@@ -39,6 +39,8 @@ export PATH=$PATH:/usr/local/go/bin
 export DENO_INSTALL="/home/augusto/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
+# Laravel
+export PATH="$PATH:/home/augusto/.config/composer/vendor/bin"
 # Alias
 export Alias="/home/augusto/Documents/dotfiles"
 source $Alias/.myAlias
@@ -48,7 +50,10 @@ export Functions="/home/augusto/Documents/dotfiles"
 source $Functions/.myFunctions
 
 # Monitor
-xrandr --output HDMI-1 --primary --mode 1920x1200 --rotate normal --output eDP-1 --mode 1920x1080 --rotate normal --right-of HDMI-1
+#xrandr --output HDMI-1 --primary --mode 1920x1200 -r 60 --rotate normal --output eDP-1 --mode 1920x1080 -r 60 --rotate normal --right-of HDMI-1
+
+# Browser
+export BROWSER=/opt/firefox/firefox
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

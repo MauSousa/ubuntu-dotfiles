@@ -20,17 +20,14 @@ bspc rule -a Screenkey manage=off
 # Wallpaper
 feh --bg-fill /home/augusto/Pictures/pexels-ylanite-koppens-776656.jpg
 
-
 # Polybar
 ~/.config/polybar/./launch.sh
 
 # Source .zshrc
-source ~/.zshrc
+#source ~/.zshrc
 
 # Dual Monitor
-if [[ $(xrandr -q | grep 'HDMI-1 connected') ]]; then
-	xrandr --output HDMI-1 --primary --mode 1920x1200 --rotate normal --output eDP-1 --mode 1920x1080 --rotate normal --right-of HDMI-1
-fi
+~/.screenlayout/./monitors.sh
 
 # Rounded borders Picom
 picom --experimental-backends &

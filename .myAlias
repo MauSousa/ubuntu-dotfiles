@@ -8,10 +8,12 @@ alias cl="clear"
 alias cñ="cl"
 alias ck="cl"
 alias ..="cd .."
+alias rm="rm -iv"
 
 # Directorios
 alias l="lsd --group-dirs=first"
 alias ll="lsd -h --group-dirs=first"
+
 #alias la="lsd -a --group-dirs=first"
 alias la="lla"
 alias lla="lsd -lah --group-dirs=first"
@@ -26,6 +28,7 @@ alias commit="git commit"
 alias add="git add"
 alias init="git init"
 alias gbr="git branch"
+alias gts="git s"
 
 # Npm
 alias start="npm start"
@@ -45,3 +48,4 @@ alias gti="go mod tidy"
 
 # Python
 alias py="python3"
+alias pipf="pip freeze"
