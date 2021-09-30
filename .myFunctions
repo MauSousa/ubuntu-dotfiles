@@ -142,6 +142,9 @@ function pyenv() {
 # Function to kill Discord process
 function kd() {
 	killall Discord 2>/dev/null
+	killall Discord 2>/dev/null
+	killall Discord 2>/dev/null
+	killall Discord 2>/dev/null
 }
 
 # Function to run TS files with Deno
