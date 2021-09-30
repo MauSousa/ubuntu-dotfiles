@@ -41,6 +41,7 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 
 # Laravel
 export PATH="$PATH:/home/augusto/.config/composer/vendor/bin"
+
 # Alias
 export Alias="/home/augusto/Documents/dotfiles"
 source $Alias/.myAlias
