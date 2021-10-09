@@ -18,6 +18,7 @@ alias lla="lsd -lah --group-dirs=first"
 alias ls="lsd -lah --group-dirs=first"
 alias cat="/usr/bin/bat"
 alias catn="/usr/bin/cat"
+alias vi="nvim"
 #alias la="lsd -a --group-dirs=first"
 
 #  Git
