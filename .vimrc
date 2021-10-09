@@ -66,20 +66,22 @@ set number relativenumber
 set noswapfile
 set autoindent
 syntax on
+syntax enable
+set clipboard=unnamed
 set sw=2
 set tabstop=2
 set laststatus=2
 set wrap linebreak
 set showcmd
 set wildmenu
-"set startofline
 set showmatch
 set noshowmode
+set mouse=a
 filetype plugin on
-" colorscheme monokai-bold
-" colorscheme monokai-bold
 set term=screen-256color
 let ayucolor="light"
 colorscheme onehalfdark
 " set termguicolors
-
+" colorscheme monokai-bold
+" colorscheme monokai-bold
+"set startofline

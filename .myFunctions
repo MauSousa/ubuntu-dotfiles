@@ -77,7 +77,7 @@ function entrarSql() {
 }
 
 # Function to make the first push to GitHub
-function gh() {
+function gthb() {
 	local url="${1}"
 	git remote add origin "$url"
 	git branch -M main

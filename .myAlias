@@ -13,13 +13,12 @@ alias rm="rm -iv"
 # Directorios
 alias l="lsd --group-dirs=first"
 alias ll="lsd -h --group-dirs=first"
-
-#alias la="lsd -a --group-dirs=first"
 alias la="lla"
 alias lla="lsd -lah --group-dirs=first"
 alias ls="lsd -lah --group-dirs=first"
 alias cat="/usr/bin/bat"
 alias catn="/usr/bin/cat"
+#alias la="lsd -a --group-dirs=first"
 
 #  Git
 alias pull="git pull"
@@ -47,5 +46,10 @@ alias gt="gr"
 alias gti="go mod tidy"
 
 # Python
-alias py="python3"
+alias py="python3.10"
 alias pipf="pip freeze"
+
+# Vite
+alias nrd="npm run dev"
+alias nrb="npm run build"
+alias vinit="npm init vite@latest"

@@ -115,7 +115,6 @@ font:
     #family: Fira Code
     #family: "/usr/share/fonts/Hack"
 
-
     # The `style` can be specified to pick a specific face.
     style: Regular
 
@@ -422,8 +421,8 @@ live_config_reload: true
 #   - (macOS) /bin/bash --login
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
-#shell:
-#program: /usr/local/bin/tmux
+shell:
+program: /usr/bin/zsh
 #args:
   #- --login
   #- -l
