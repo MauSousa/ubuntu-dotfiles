@@ -1,13 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
-# Created by newuser for 5.8
-
 # History
 export HISTFILE=~/.zsh_history
 export HISTFILESIZE=20000
@@ -17,9 +7,6 @@ export SAVEHIST=20000
 setopt EXTENDED_HISTORY
 setopt HIST_FIND_NO_DUPS
 setopt INC_APPEND_HISTORY
-
-# Theme
-source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # Plugins
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -53,12 +40,11 @@ source $Alias/.myAlias
 export Functions="/home/augusto/Documents/dotfiles"
 source $Functions/.myFunctions
 
-# Monitor
-#xrandr --output HDMI-1 --primary --mode 1920x1200 -r 60 --rotate normal --output eDP-1 --mode 1920x1080 -r 60 --rotate normal --right-of HDMI-1
-
 # Browser
 export BROWSER=/opt/firefox/firefox
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+fpath=($fpath "/home/augusto/.zfunctions")
 
+# Set Spaceship ZSH as a prompt
+autoload -U promptinit; promptinit
+prompt spaceship

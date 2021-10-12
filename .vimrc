@@ -22,7 +22,7 @@ call plug#begin()
  Plug 'ayu-theme/ayu-vim'
  Plug 'StanAngeloff/php.vim'
  Plug 'sonph/onehalf', { 'rtp': 'vim' }
-
+ Plug 'arcticicestudio/nord-vim'
 call plug#end()
 
 " CoC tab key map
@@ -39,11 +39,13 @@ endfunction
 
 " vim-rainbow 
 let g:rainbow_active = 1
+let g:rainbow_guifgs = ['RoyalBlue3', 'DarkOrange3', 'DarkOrchid3', 'FireBrick']
+let g:rainbow_ctermfgs = ['lightblue', 'lightgreen', 'yellow', 'red', 'lightmagenta']
 
 " Lightline colorscheme
-let g:lightline = {
-	\ 'colorscheme': 'onehalflight',
-	\}
+"let g:lightline = {
+"	\ 'colorscheme': 'onehalflight',
+"	\}
 "\ 'colorscheme': 'onehalflight',
 "\ 'colorscheme': 'nord',
 "\ 'colorscheme': 'Tomorrow_Night',
@@ -78,10 +80,10 @@ set showmatch
 set noshowmode
 set mouse=a
 filetype plugin on
-set term=screen-256color
-let ayucolor="light"
-colorscheme onehalfdark
-" set termguicolors
+"set term=screen-256color
+"let ayucolor="light"
+colorscheme nord
+"set termguicolors
 " colorscheme monokai-bold
 " colorscheme monokai-bold
 "set startofline

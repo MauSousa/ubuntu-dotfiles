@@ -18,7 +18,7 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
 # Wallpaper
-feh --bg-fill /home/augusto/Pictures/pexels-fauxels-3183198.jpg
+feh --bg-fill /home/augusto/Pictures/kiwihug-zGZYQQVmXw0-unsplash.jpg
 
 # Polybar
 ~/.config/polybar/./launch.sh
