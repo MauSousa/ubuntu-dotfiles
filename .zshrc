@@ -43,8 +43,9 @@ source $Functions/.myFunctions
 # Browser
 export BROWSER=/opt/firefox/firefox
 
-fpath=($fpath "/home/augusto/.zfunctions")
+# Starship config file
+export STARSHIP_CONFIG=~/.starship/config.toml
+export STARSHIP_CACHE=~/.starship/cache
 
-# Set Spaceship ZSH as a prompt
-autoload -U promptinit; promptinit
-prompt spaceship
+# Starship
+eval "$(starship init zsh)"
