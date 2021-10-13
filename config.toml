@@ -14,13 +14,14 @@ style = "119"
 # Python
 [python]
 symbol = " "
-style = "123"
+style = "bold 123"
 
 # Directory
 [directory]
 truncation_length = 2
-style = "117"
+style = "bold 117"
 read_only = " "
+home_symbol = " "
 
 # Golang
 [golang]
