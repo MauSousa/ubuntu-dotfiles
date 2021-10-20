@@ -3,7 +3,7 @@ add_newline = false
 
 # Replace the "❯" symbol in the prompt with "➜"
 [character]                            # The name of the module we are configuring is "character"
-success_symbol = "[➜](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
+success_symbol = "[∮](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
 error_symbol = "[✗](bold black) "
 
 # Disable the package module, hiding it from the prompt completely
@@ -18,10 +18,12 @@ style = "bold 123"
 
 # Directory
 [directory]
-truncation_length = 2
+truncation_length = 8
+truncate_to_repo = false
 style = "bold 117"
 read_only = " "
-home_symbol = " "
+home_symbol = "ξ"
+#home_symbol = " "
 
 # Golang
 [golang]
@@ -36,7 +38,7 @@ behind = "😰"
 diverged = "😵"
 up_to_date = ""
 #up_to_date = "✓"
-untracked = "‍"
+untracked = "?"
 #untracked = "🤷‍"
 stashed = "📦"
 modified = "📝"
@@ -64,6 +66,7 @@ symbol = " "
 
 [java]
 symbol = " "
+style = "231"
 
 [julia]
 symbol = " "

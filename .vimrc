@@ -57,6 +57,12 @@ command! Wqa wqa
 command! W w
 command! Q q
 
+" Search
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
 " Remap
 let mapleader=","
 inoremap ,, <ESC>
@@ -69,7 +75,6 @@ set noswapfile
 set autoindent
 syntax on
 syntax enable
-set clipboard=unnamed
 set sw=2
 set tabstop=2
 set laststatus=2
@@ -80,10 +85,28 @@ set showmatch
 set noshowmode
 set mouse=a
 filetype plugin on
+colorscheme nord
+
+set ruler
+
+"" Encoding
+set encoding=utf-8
+set fileencoding=utf-8
+set fileencodings=utf-8
+set ttyfast
+
+set nomodeline
+
+"" Remember cursor position
+augroup vimrc-remember-cursor-position
+  autocmd!
+  autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+augroup END
+
 "set term=screen-256color
 "let ayucolor="light"
-colorscheme nord
 "set termguicolors
 " colorscheme monokai-bold
 " colorscheme monokai-bold
 "set startofline
+

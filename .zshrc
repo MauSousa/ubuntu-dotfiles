@@ -1,3 +1,6 @@
+# Term
+export TERM="xterm-256color"
+
 # History
 export HISTFILE=~/.zsh_history
 export HISTFILESIZE=20000

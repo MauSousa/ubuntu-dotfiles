@@ -23,9 +23,6 @@ feh --bg-fill /home/augusto/Pictures/kiwihug-zGZYQQVmXw0-unsplash.jpg
 # Polybar
 ~/.config/polybar/./launch.sh
 
-# Source .zshrc
-#source ~/.zshrc
-
 # Dual Monitor
 ~/.screenlayout/./monitors.sh
 

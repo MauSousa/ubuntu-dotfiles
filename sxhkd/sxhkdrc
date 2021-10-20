@@ -5,7 +5,7 @@
 # terminal emulator
 
 super + Return
-		gnome-terminal
+		alacritty	
 
 # program launcher
 
@@ -144,5 +144,7 @@ ctrl + shift + b
 ctrl + shift + f
 		firefox
 
-
+# Packet Tracer
+ctrl + alt + p
+    packettracer
 

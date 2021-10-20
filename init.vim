@@ -12,7 +12,7 @@ endif
 
 let g:vim_bootstrap_langs = "go,html,javascript,php,python,typescript"
 let g:vim_bootstrap_editor = "neovim"				" nvim or vim
-let g:vim_bootstrap_theme = "codedark"
+let g:vim_bootstrap_theme = "nord"
 let g:vim_bootstrap_frams = ""
 
 if !filereadable(vimplug_exists)
@@ -38,8 +38,6 @@ Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-scripts/grep.vim'
 Plug 'vim-scripts/CSApprox'
@@ -50,11 +48,12 @@ Plug 'Yggdroot/indentLine'
 Plug 'editor-bootstrap/vim-bootstrap-updater'
 Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
 Plug 'tomasiser/vim-code-dark'
+Plug 'arcticicestudio/nord-vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 "*****************************************************************************
-"Nord vim plugin
 "*****************************************************************************
-Plug 'arcticicestudio/nord-vim'
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -133,9 +132,9 @@ set ttyfast
 set backspace=indent,eol,start
 
 "" Tabs. May be overridden by autocmd rules
-set tabstop=4
+set tabstop=2
 set softtabstop=0
-set shiftwidth=4
+set shiftwidth=2
 set expandtab
 
 "" Map leader to ,
@@ -213,7 +212,6 @@ set gcr=a:blinkon0
 
 set scrolloff=3
 
-
 "" Status bar
 set laststatus=2
 
@@ -269,7 +267,7 @@ let g:NERDTreeMapOpenInTabSilent = '<RightMouse>'
 let g:NERDTreeWinSize = 50
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
 nnoremap <silent> <F2> :NERDTreeFind<CR>
-nnoremap <silent> <F3> :NERDTreeToggle<CR>
+nnoremap <silent> <F9> :NERDTreeToggle<CR>
 
 " grep.vim
 nnoremap <silent> <leader>f :Rgrep<CR>
@@ -533,7 +531,7 @@ let g:javascript_enable_domhtmlcss = 1
 " vim-javascript
 augroup vimrc-javascript
   autocmd!
-  autocmd FileType javascript setl tabstop=4|setl shiftwidth=4|setl expandtab softtabstop=4
+  autocmd FileType javascript setl tabstop=2|setl shiftwidth=2|setl expandtab softtabstop=2
 augroup END
 
 " php
@@ -608,40 +606,40 @@ endif
 "*****************************************************************************
 
 " vim-airline
-"if !exists('g:airline_symbols')
-"  let g:airline_symbols = {}
-"endif
-"
-"if !exists('g:airline_powerline_fonts')
-"  let g:airline#extensions#tabline#left_sep = ' '
-"  let g:airline#extensions#tabline#left_alt_sep = '|'
-"  let g:airline_left_sep          = '▶'
-"  let g:airline_left_alt_sep      = '»'
-"  let g:airline_right_sep         = '◀'
-"  let g:airline_right_alt_sep     = '«'
-"  let g:airline#extensions#branch#prefix     = '⤴' "➔, ➥, ⎇
-"  let g:airline#extensions#readonly#symbol   = '⊘'
-"  let g:airline#extensions#linecolumn#prefix = '¶'
-"  let g:airline#extensions#paste#symbol      = 'ρ'
-"  let g:airline_symbols.linenr    = '␊'
-"  let g:airline_symbols.branch    = '⎇'
-"  let g:airline_symbols.paste     = 'ρ'
-"  let g:airline_symbols.paste     = 'Þ'
-"  let g:airline_symbols.paste     = '∥'
-"  let g:airline_symbols.whitespace = 'Ξ'
-"else
-"  let g:airline#extensions#tabline#left_sep = ''
-"  let g:airline#extensions#tabline#left_alt_sep = ''
-"
-"  " powerline symbols
-"  let g:airline_left_sep = ''
-"  let g:airline_left_alt_sep = ''
-"  let g:airline_right_sep = ''
-"  let g:airline_right_alt_sep = ''
-"  let g:airline_symbols.branch = ''
-"  let g:airline_symbols.readonly = ''
-"  let g:airline_symbols.linenr = ''
-"endif
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+
+if !exists('g:airline_powerline_fonts')
+  let g:airline#extensions#tabline#left_sep = ' '
+  let g:airline#extensions#tabline#left_alt_sep = '|'
+  "let g:airline_left_sep          = '▶'
+  let g:airline_left_alt_sep      = '»'
+"  "let g:airline_right_sep         = '◀'
+  let g:airline_right_alt_sep     = '«'
+  let g:airline#extensions#branch#prefix     = '⤴' "➔, ➥, ⎇
+  let g:airline#extensions#readonly#symbol   = '⊘'
+  let g:airline#extensions#linecolumn#prefix = '¶'
+  let g:airline#extensions#paste#symbol      = 'ρ'
+  let g:airline_symbols.linenr    = '␊'
+  let g:airline_symbols.branch    = '⎇'
+  let g:airline_symbols.paste     = 'ρ'
+  let g:airline_symbols.paste     = 'Þ'
+  let g:airline_symbols.paste     = '∥'
+  let g:airline_symbols.whitespace = 'Ξ'
+else
+  let g:airline#extensions#tabline#left_sep = ''
+  let g:airline#extensions#tabline#left_alt_sep = ''
+
+" powerline symbols
+  let g:airline_left_sep = ''
+  let g:airline_left_alt_sep = ''
+  let g:airline_right_sep = ''
+  let g:airline_right_alt_sep = ''
+  let g:airline_symbols.branch = ''
+  let g:airline_symbols.readonly = ''
+  let g:airline_symbols.linenr = ''
+endif
 
 " Typo fixes
 command! WQ wq
@@ -655,9 +653,36 @@ highlight Normal guibg=none
 highlight NonText guibg=none
 
 " Remap
-let mapleader=","
 inoremap ,, <ESC>
 inoremap ññ <ESC>:wq<enter>
 inoremap ñl <ESC>:w<enter>i
+inoremap ,ñ <ESC>:W<enter>
+inoremap ,l <C-d><leader>
+
 set noswapfile
 set mouse=a
+
+" Emmet settings
+let g:user_emmet_settings = {
+\  'variables': {'lang': 'en'},
+\  'html': {
+\    'default_attributes': {
+\      'option': {'value': v:null},
+\      'textarea': {'id': v:null, 'name': v:null, 'cols': 10, 'rows': 10},
+\    },
+\    'snippets': {
+\      'html:5': "<!DOCTYPE html>\n"
+\              ."<html lang=\"${lang}\">\n"
+\              ."<head>\n"
+\              ."\t<meta charset=\"${charset}\">\n"
+\              ."\t<title></title>\n"
+\              ."\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n"
+\              ."</head>\n"
+\              ."<body>\n\t${child}|\n</body>\n"
+\              ."</html>",
+\    },
+\  },
+\}
+
+let g:user_emmet_leader_key='<C-D>'
+
