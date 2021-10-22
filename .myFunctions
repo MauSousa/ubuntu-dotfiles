@@ -97,7 +97,7 @@ function rmk() {
 
 # Function to copy and push dotfiles to repository
 function cdf() {
-	cp ~/.zshrc ~/.vimrc ~/.config/alacritty/alacritty.yml ~/.tmux.conf ~/.mongoshrc.js ~/.config/lsd/config.yaml ~/.config/nvim/init.vim ~/.starship/config.toml /home/$USER/Documents/dotfiles
+	cp ~/.zshrc ~/.zshenv ~/.vimrc ~/.config/alacritty/alacritty.yml ~/.tmux.conf ~/.mongoshrc.js ~/.config/lsd/config.yaml ~/.config/nvim/init.vim ~/.starship/config.toml /home/$USER/Documents/dotfiles
 }
 
 # Function to run go programs
@@ -148,4 +148,9 @@ function dr() {
 # Function to bundle TS file
 function dnb() {
 	deno bundle $1 $2
+}
+
+# Function to remove directories
+function rd() {
+  rm -rf $1
 }
