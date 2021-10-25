@@ -56,3 +56,8 @@ alias pipl="pip list"
 alias nrd="npm run dev"
 alias nrb="npm run build"
 alias vinit="npm init vite@latest"
+
+# Symfony
+alias sfs="symfony serve"
+alias sfsd="symfony serve -d"
+alias sfst="symfony serve:stop"
