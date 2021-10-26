@@ -4,7 +4,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
-bspc config border_width         2
+bspc config border_width        2
 bspc config window_gap          8
 
 bspc config split_ratio          0.52
@@ -18,7 +18,7 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
 # Wallpaper
-feh --bg-fill /home/augusto/Pictures/kiwihug-zGZYQQVmXw0-unsplash.jpg
+feh --bg-fill /home/augusto/Pictures/pexels-pixabay-60597.jpg
 
 # Polybar
 ~/.config/polybar/./launch.sh
@@ -28,7 +28,7 @@ feh --bg-fill /home/augusto/Pictures/kiwihug-zGZYQQVmXw0-unsplash.jpg
 
 # Rounded borders Picom
 picom --experimental-backends &
-bspc config border_width 0
+bspc config border_width 1
 
 # Mouse
 xsetroot -cursor_name left_ptr &
