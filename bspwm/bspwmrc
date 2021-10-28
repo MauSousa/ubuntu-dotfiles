@@ -28,7 +28,7 @@ feh --bg-fill /home/augusto/Pictures/pexels-pixabay-60597.jpg
 
 # Rounded borders Picom
 picom --experimental-backends &
-bspc config border_width 1
+bspc config border_width 2
 
 # Mouse
 xsetroot -cursor_name left_ptr &
