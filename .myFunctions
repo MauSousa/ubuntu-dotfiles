@@ -97,7 +97,7 @@ function rmk() {
 
 # Function to copy and push dotfiles to repository
 function cdf() {
-	cp ~/.zshrc ~/.zshenv ~/.vimrc ~/.config/alacritty/alacritty.yml ~/.tmux.conf ~/.mongoshrc.js ~/.config/lsd/config.yaml ~/.config/nvim/init.vim ~/.starship/config.toml /home/$USER/Documents/dotfiles
+	cp ~/.zshrc ~/.zshenv /home/$USER/Documents/dotfiles/zsh; cp ~/.vimrc /home/$USER/Documents/dotfiles/vim; cp -r ~/.config/alacritty /home/$USER/Documents/dotfiles; cp ~/.tmux.conf /home/$USER/Documents/dotfiles/tmux; cp ~/.mongoshrc.js /home/$USER/Documents/dotfiles/mongo; cp -r ~/.config/lsd /home/$USER/Documents/dotfiles; cp ~/.config/nvim/init.vim /home/$USER/Documents/dotfiles/nvim; cp ~/.starship/config.toml /home/$USER/Documents/dotfiles/starship
 }
 
 # Function to run go programs

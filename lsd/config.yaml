@@ -1,1 +1,7 @@
 date: '+%d %b %y %X'
+
+icons:
+  when: auto
+  theme: fancy
+
+indicators: true
